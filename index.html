@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seorang Kyai Pengusaha Membisikkan Satu Kalimat yang Menjelaskan Kenapa Aku Kerja Mati-Matian Tapi Uangku Cuma Numpang Lewat - Rahmah Media</title>
+<meta name="description" content="Kerja keras jalan, ibadah gak bolong, tapi hidup mentok dan dada sesek tiap hari. Sampai satu kalimat di sebuah majelis mengubah cara saya melihat rezeki.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1A1A1A; --body:#2E2E2E; --muted:#6B7280; --line:#E5E7EB;
+  --bg:#FFFFFF; --bg-soft:#FAF9F6;
+  --brand:#1B5E43; --brand-soft:#E8F0EC;
+  --cta:#16A34A; --cta-hover:#15803D;
+  --accent:#B45309; --danger:#991B1B;
+  --serif:'Playfair Display',Georgia,serif;
+  --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  --col:720px; --side:300px; --max:1140px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--bg);color:var(--body);
+  font-family:var(--sans);font-size:19px;line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--brand);text-decoration:none}
+a:focus-visible,button:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+
+/* ---------- READING PROGRESS ---------- */
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--brand);z-index:200;transition:width .1s linear}
+
+/* ---------- TOPBAR ---------- */
+
+/* ---------- HEADER ---------- */
+.site-header{background:#fff;border-bottom:1px solid var(--line)}
+.site-header .in{max-width:var(--max);margin:0 auto;padding:0 24px;height:60px;display:flex;align-items:center}
+.logo{font-family:var(--serif);font-size:24px;font-weight:700;letter-spacing:-.3px;white-space:nowrap}
+.logo .a{color:var(--brand)}
+.logo .b{color:var(--ink);font-weight:400}
+
+/* ---------- LAYOUT ---------- */
+.wrap{max-width:var(--max);margin:0 auto;padding:32px 24px 0;display:grid;grid-template-columns:var(--col) var(--side);gap:40px;justify-content:center}
+.article{min-width:0}
+
+/* ---------- ARTICLE HEAD ---------- */
+.crumb{font-size:12px;color:var(--muted);margin-bottom:14px}
+.crumb a{color:var(--muted)}
+.crumb a:hover{color:var(--brand)}
+.rubrik{display:inline-block;background:var(--accent);color:#fff;font-size:11px;font-weight:600;letter-spacing:.6px;padding:4px 10px;border-radius:3px;margin-bottom:14px}
+h1{font-family:var(--serif);font-size:40px;line-height:1.25;color:var(--ink);margin:0 0 20px;font-weight:700;letter-spacing:-.5px}
+.byline{display:flex;align-items:center;gap:12px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.avatar{width:40px;height:40px;border-radius:50%;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:600;flex:none}
+.byline .n{font-size:14px;font-weight:600;color:var(--ink);line-height:1.35}
+.byline .m{font-size:13px;color:var(--muted);line-height:1.35}
+
+/* ---------- BODY TEXT ---------- */
+.article p{margin:0 0 20px}
+.article h2{font-family:var(--serif);font-size:28px;line-height:1.3;color:var(--ink);margin:44px 0 18px;font-weight:700}
+.article h3{font-size:20px;font-weight:600;color:var(--ink);margin:34px 0 14px;line-height:1.4}
+.article strong{color:var(--ink);font-weight:600}
+.lead{font-size:21px;line-height:1.7;color:var(--ink)}
+
+/* ---------- FIGURES ---------- */
+figure{margin:32px 0}
+figure img{border-radius:4px;width:100%}
+figure.narrow{max-width:480px;margin-left:auto;margin-right:auto}
+figcaption{font-size:14px;line-height:1.5;color:var(--muted);font-style:italic;margin-top:8px}
+
+/* ---------- PULL QUOTE ---------- */
+blockquote{margin:32px 0;padding:20px 24px;background:var(--bg-soft);border-left:4px solid var(--brand);font-family:var(--serif);font-style:italic;font-size:22px;line-height:1.5;color:var(--ink)}
+blockquote p{margin:0}
+blockquote cite{display:block;font-family:var(--sans);font-style:normal;font-size:14px;color:var(--muted);margin-top:10px}
+
+/* ---------- TIMELINE ---------- */
+.timeline{margin:28px 0;padding-left:24px;border-left:2px solid var(--line);list-style:none}
+.timeline li{position:relative;margin-bottom:22px}
+.timeline li:last-child{margin-bottom:0}
+.timeline li::before{content:"";position:absolute;left:-31px;top:10px;width:10px;height:10px;border-radius:50%;background:var(--brand);border:2px solid #fff}
+.timeline .day{display:block;font-weight:700;color:var(--brand);font-size:15px;letter-spacing:.3px;margin-bottom:2px}
+
+/* ---------- TESTIMONI ---------- */
+.testi{border-left:3px solid var(--line);padding:2px 0 2px 18px;margin:0 0 26px}
+.testi .who{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:6px}
+.testi p{margin:0;font-size:17px;line-height:1.65}
+
+/* ---------- CHAT ---------- */
+.chat{max-width:380px;margin:32px auto;background:#ECE5DD;border-radius:10px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.08);font-size:15px}
+.chat-top{background:#075E54;padding:10px 14px;display:flex;align-items:center;gap:10px}
+.chat-top .av{width:34px;height:34px;border-radius:50%;background:#B9C4C0;color:#0B3D36;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;flex:none}
+.chat-top .nm{color:#fff;font-size:15px;font-weight:500;line-height:1.2}
+.chat-top .st{color:#B9DCD5;font-size:12px;line-height:1.2}
+.chat-body{padding:14px 12px;display:flex;flex-direction:column;gap:8px}
+.bub{max-width:82%;padding:8px 10px 6px;border-radius:8px;line-height:1.45;position:relative;box-shadow:0 1px 1px rgba(0,0,0,.08)}
+.bub.in{background:#fff;align-self:flex-start;border-top-left-radius:2px}
+.bub.out{background:#DCF8C6;align-self:flex-end;border-top-right-radius:2px}
+.bub .t{display:block;text-align:right;font-size:11px;color:#8C9A93;margin-top:2px}
+.bub .t b{color:#4FC3F7;font-weight:400;margin-left:2px}
+
+/* ---------- CTA ---------- */
+.cta-box{margin:36px 0;text-align:center}
+.cta{display:inline-block;background:var(--cta);color:#fff;font-size:18px;font-weight:600;line-height:1.4;padding:18px 32px;border-radius:6px;box-shadow:0 4px 14px rgba(22,163,74,.25);animation:pulse 2.6s ease-in-out infinite}
+.cta:hover{background:var(--cta-hover)}
+.cta-sub{font-size:13px;color:var(--muted);margin-top:10px}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.015)}}
+@media (prefers-reduced-motion:reduce){.cta{animation:none}}
+
+/* ---------- HARGA ---------- */
+.price-list{margin:28px 0;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.pr{display:flex;justify-content:space-between;gap:16px;padding:14px 18px;border-bottom:1px solid var(--line);font-size:16px;color:var(--muted)}
+.pr .v{white-space:nowrap;text-decoration:line-through}
+.pr.total{color:var(--danger);font-weight:600;background:#FEF2F2}
+.pr.total .v{text-decoration:none}
+.pr.win{background:var(--brand-soft);border:none;border-top:1px solid var(--brand);color:var(--ink);font-weight:600;padding:20px 18px;font-size:17px;align-items:center}
+.pr.win .v{text-decoration:none;font-size:24px;font-weight:700;color:var(--brand)}
+.pr:last-child{border-bottom:none}
+
+/* ---------- PILIHAN ---------- */
+.choice{border:1px solid var(--line);border-radius:8px;padding:20px 22px;margin:0 0 18px}
+.choice.good{border-color:var(--brand);background:var(--brand-soft)}
+.choice .lb{font-size:13px;font-weight:700;letter-spacing:.5px;color:var(--muted);margin-bottom:8px}
+.choice.good .lb{color:var(--brand)}
+.choice p{margin:0}
+
+/* ---------- SIDEBAR ---------- */
+.sidebar{min-width:0}
+.stick{position:static}
+.side-h{font-size:13px;font-weight:600;letter-spacing:.6px;color:var(--muted);padding-bottom:8px;border-bottom:2px solid var(--brand);margin-bottom:4px}
+.pop{display:flex;gap:12px;padding:16px 0;border-bottom:1px solid var(--line);align-items:flex-start}
+.pop:last-child{border-bottom:none}
+.pop .num{font-family:var(--serif);font-size:26px;font-weight:700;color:var(--line);line-height:1;flex:none;width:26px}
+.pop .tx{font-size:16px;font-weight:600;color:var(--ink);line-height:1.4;display:block}
+.pop:hover .tx{color:var(--brand)}
+.pop .mt{font-size:12px;color:var(--muted);margin-top:5px;display:block;font-weight:400}
+
+/* ---------- BACA JUGA (mobile) ---------- */
+.baca{display:none;margin:32px 0;padding:18px 20px;background:var(--bg-soft);border-left:3px solid var(--brand);border-radius:0 6px 6px 0}
+.baca .side-h{border:none;padding:0;margin-bottom:10px}
+.baca a{display:block;font-size:16px;font-weight:600;color:var(--ink);line-height:1.4;padding:8px 0;border-bottom:1px solid var(--line)}
+.baca a:last-child{border-bottom:none}
+
+/* ---------- KOMENTAR ---------- */
+.komentar{max-width:var(--max);margin:56px auto 0;padding:0 24px}
+.komentar .inner{max-width:var(--col)}
+.kom-h{font-family:var(--serif);font-size:20px;font-weight:700;color:var(--ink);padding-bottom:12px;border-bottom:1px solid var(--line);margin-bottom:20px}
+.kom-form{display:flex;gap:10px;margin-bottom:28px}
+.kom-form input{flex:1;height:44px;border:1px solid var(--line);border-radius:6px;padding:0 14px;font-family:var(--sans);font-size:15px;background:var(--bg-soft);color:var(--body)}
+.kom-form button{height:44px;padding:0 20px;border:none;border-radius:6px;background:var(--brand);color:#fff;font-family:var(--sans);font-size:15px;font-weight:600;cursor:pointer}
+.kom{display:flex;gap:12px;margin-bottom:22px}
+.kom .av{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:600;color:#fff;flex:none}
+.kom .bd{min-width:0}
+.kom .hd{font-size:14px;margin-bottom:3px}
+.kom .hd b{color:var(--ink);font-weight:600}
+.kom .hd span{color:var(--muted);font-size:12px;margin-left:8px}
+.kom .tx{font-size:15px;line-height:1.6;margin:0 0 6px}
+.kom .ac{font-size:13px;color:var(--muted)}
+.kom .ac a{color:var(--muted);margin-right:14px}
+.kom .ac a:hover{color:var(--brand)}
+.reply{margin-left:48px;background:var(--bg-soft);padding:14px;border-radius:8px}
+.more-kom{display:block;width:100%;padding:12px;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--muted);font-family:var(--sans);font-size:14px;cursor:pointer;margin-top:6px}
+.more-kom:hover{border-color:var(--brand);color:var(--brand)}
+
+/* ---------- FOOTER ---------- */
+footer{background:var(--ink);color:#9CA3AF;margin-top:64px;padding:32px 0 26px;font-size:14px}
+footer .in{max-width:var(--max);margin:0 auto;padding:0 24px}
+footer .logo .a{color:#5FBF95}
+footer .logo .b{color:#fff}
+.f-bot{border-top:1px solid #333;margin-top:20px;padding-top:18px;font-size:13px}
+
+/* ---------- FLOATING CTA ---------- */
+#float{position:fixed;left:0;right:0;bottom:0;z-index:150;background:#fff;border-top:1px solid var(--line);box-shadow:0 -2px 14px rgba(0,0,0,.09);padding:12px 16px;display:flex;align-items:center;gap:12px;transform:translateY(110%);transition:transform .3s ease-out}
+#float.on{transform:translateY(0)}
+#float .info{flex:1;min-width:0;line-height:1.3}
+#float .p1{font-size:14px;font-weight:600;color:var(--ink)}
+#float .p2{font-size:13px;color:var(--muted)}
+#float .go{background:var(--cta);color:#fff;font-size:15px;font-weight:600;padding:13px 20px;border-radius:6px;white-space:nowrap}
+#float .go:hover{background:var(--cta-hover)}
+#float .x{background:none;border:none;color:var(--muted);font-size:22px;line-height:1;cursor:pointer;padding:4px 6px;flex:none}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:1023px){
+  .wrap{grid-template-columns:minmax(0,680px);justify-content:center;padding-top:24px}
+  .sidebar{display:none}
+  .baca{display:block}
+  .komentar .inner{max-width:680px}
+  .komentar{max-width:728px}
+}
+@media (max-width:767px){
+  body{font-size:17px}
+  .wrap{padding:20px 20px 0}
+  .komentar{padding:0 20px}
+    h1{font-size:28px}
+  .lead{font-size:19px}
+  .article h2{font-size:22px;margin:36px 0 14px}
+  .article h3{font-size:18px}
+  blockquote{font-size:19px;padding:16px 18px}
+  figure.narrow{max-width:100%}
+  .cta{display:block;font-size:17px;padding:17px 20px}
+  .cta-box{margin:30px 0}
+  .pr{font-size:15px;padding:12px 14px}
+  .pr.win{font-size:16px;padding:16px 14px}
+  .pr.win .v{font-size:21px}
+  .reply{margin-left:20px}
+    #float .p2{display:none}
+}
+@media (max-width:380px){
+  .wrap,.komentar{padding-left:16px;padding-right:16px}
+  h1{font-size:26px}
+  #float{padding:10px 12px;gap:8px}
+  #float .go{padding:12px 14px;font-size:14px}
+}
+</style>
+</head>
+<body>
+
+<div id="progress"></div>
+
+<header class="site-header">
+  <div class="in">
+    <a href="#" class="logo"><span class="a">Rahmah</span><span class="b">Media</span></a>
+  </div>
+</header>
+
+<div class="wrap">
+<main class="article">
+
+  <div class="crumb"><a href="#">Beranda</a> &rsaquo; <a href="#">Kisah Nyata</a></div>
+  <span class="rubrik">KISAH NYATA</span>
+
+  <h1>Seorang Kyai Pengusaha Membisikkan Satu Kalimat yang Menjelaskan Kenapa Aku Kerja Mati-Matian Tapi Uangku Cuma Numpang Lewat&hellip; dan Kalimat Itu Mengubah Segalanya</h1>
+
+  <div class="byline">
+    <div class="avatar">RA</div>
+    <div>
+      <div class="n">Rifqi Adrian</div>
+      <div class="m">Kontributor &middot; 20 Agustus 2026 &middot; 13 menit baca</div>
+    </div>
+  </div>
+
+  <figure>
+    <img src="img/01-hero-malam-hari.webp" alt="Seorang pria duduk di tepi kasur pada malam hari dengan bahu membungkuk" width="1600" height="900">
+    <figcaption>Beban finansial sering paling terasa justru saat rumah sudah sunyi. (Foto: Rahmah Media/Ilustrasi)</figcaption>
+  </figure>
+
+  <!-- ============ SECTION 1 ============ -->
+  <p class="lead">Aku pura-pura ketiduran.</p>
+
+  <p>Malam itu istriku masuk kamar, duduk di pinggir kasur, dan bilang pelan, &ldquo;Yah&hellip; SPP Bilal nunggak dua bulan. Tadi wali kelasnya WA aku lagi.&rdquo;</p>
+
+  <p>Aku merem. Nafasku aku atur biar kedengeran kayak orang tidur pules.</p>
+
+  <p>Padahal jantungku gedebukan.</p>
+
+  <p>Bukan karena aku gak denger. Tapi karena aku gak punya jawaban.</p>
+
+  <p>Laki-laki macam apa yang pura-pura tidur biar gak ditanya istrinya sendiri soal uang sekolah anaknya?</p>
+
+  <p><strong>Aku. Aku laki-laki itu.</strong></p>
+
+  <p>Dan yang paling bikin sesek&hellip; besok paginya aku tetap bangun jam 5, berangkat paling pagi, pulang paling malam. Sholat jalan. Ikhtiar jalan. Gak ada satu hari pun aku males-malesan.</p>
+
+  <p>Tapi di titik itu aku sadar satu hal yang gak berani aku akuin selama bertahun-tahun:</p>
+
+  <p>Masalahku bukan kurang kerja keras.</p>
+
+  <p><strong>Ada yang bocor. Dan bocornya bukan di dompetku.</strong></p>
+
+  <p>Tiga minggu setelah malam itu, seorang Kyai pengusaha di sebuah majelis bilang satu kalimat yang bikin aku kayak ditampar. Kalimat itu menjelaskan kenapa uangku selalu cuma numpang lewat, kenapa peluang selalu gagal pas tinggal selangkah lagi, dan kenapa dada ini gak pernah berhenti sesek walau ibadah gak pernah bolong.</p>
+
+  <p>Tapi sebelum aku ceritain kalimat itu, kamu perlu tahu dulu seberapa dalam lubang yang aku gali sendiri&hellip;</p>
+
+  <!-- ============ SECTION 2 ============ -->
+  <h2>Pelan-Pelan, &ldquo;Mepet Biasa&rdquo; Itu Mulai Makan Hidupku</h2>
+
+  <p>Biar aku jujur dari awal. Kondisiku dulu gak langsung separah itu.</p>
+
+  <p>Awalnya ya cuma &ldquo;mepet biasa&rdquo;. Tanggal 25 rekening mulai tipis, tanggal 1 gajian atau ada pembayaran masuk, aman lagi. Yang penting muter, pikirku. Namanya juga hidup.</p>
+
+  <p>Tapi pelan-pelan, tanpa aku sadar, &ldquo;mepet biasa&rdquo; itu mulai makan hidupku sepotong demi sepotong.</p>
+
+  <h3>Yang pertama hilang: nongkrong bareng temen-temen.</h3>
+
+  <p>Dulu hampir tiap Jumat malam aku ngumpul sama temen-temen di cafe langganan kami. Ngopi, ngobrol ngalor-ngidul, ketawa-ketawa sampai gak kerasa udah tengah malam. Sekarang tiap ada yang ngajak, jawabanku selalu sama: &ldquo;Duluan aja, aku masih ada kerjaan.&rdquo;</p>
+
+  <p>Padahal bukan kerjaan.</p>
+
+  <p>Aku cuma gak sanggup keluar 60-70 ribu buat segelas kopi dan cemilan&hellip; sementara di rumah SPP anakku belum kebayar. Dan yang lebih nyesek dari gak bisa bayarnya: rasa takut kalau pas nongkrong nanti giliran aku yang gak bisa ikut split bill, terus semua orang jadi tau kondisiku.</p>
+
+  <p>Lama-lama mereka berhenti ngajak.</p>
+
+  <p>Terus grup WA keluarga besar. Aku mute. Udah hampir setahun.</p>
+
+  <p>Bukan karena benci. Tapi tiap ada yang share undangan nikahan atau info arisan keluarga, yang kepikir duluan di otakku bukan orangnya&hellip; tapi amplopnya. Kondangan sepupu sendiri aku gak dateng. Titip amplop 100 ribu lewat ibuku, terus bilang lagi ada acara kantor.</p>
+
+  <p>Gak ada acara kantor. Aku di rumah. Rebahan. Mikirin cicilan.</p>
+
+  <h3>Terus yang paling aku sesali sampai sekarang: anakku.</h3>
+
+  <p>Suatu sore Bilal narik-narik bajuku, minta jajan es krim. Lima ribu. CUMA lima ribu. Dan aku bentak dia.</p>
+
+  <p>&ldquo;Bilal! Ayah lagi gak ada uang! Jangan minta-minta terus!&rdquo;</p>
+
+  <p>Dia diem. Matanya kaca-kaca. Terus dia masuk kamar pelan-pelan tanpa nangis.</p>
+
+  <figure>
+    <img src="img/03-anak-di-pintu.webp" alt="Seorang anak kecil berjalan menjauh melewati ambang pintu kamar" width="1200" height="800" loading="lazy">
+    <figcaption>Tekanan ekonomi rumah tangga kerap berdampak pada relasi orang tua dan anak. (Foto: Rahmah Media/Ilustrasi)</figcaption>
+  </figure>
+
+  <p>Malemnya aku nangis sendirian di kamar mandi. Bukan karena lima ribu. Tapi karena aku sadar rasa panik ini udah berubah jadi monster yang nyakitin orang yang paling aku sayang. Anakku gak salah apa-apa. Dia cuma pengen es krim.</p>
+
+  <h3>Dan tidurku? Jangan tanya.</h3>
+
+  <p>Hampir tiap malam aku kebangun jam 2 atau jam 3 pagi. Bukan buat tahajud. Tapi karena otakku otomatis nyala, ngitung-ngitung: cicilan tanggal 5, SPP tanggal 10, listrik, kontrakan&hellip; Angka-angka itu muter kayak kaset rusak sampai adzan Subuh.</p>
+
+  <figure>
+    <img src="img/02-jam3-pagi.webp" alt="Layar ponsel menyala dalam gelap saat dini hari" width="1200" height="800" loading="lazy">
+    <figcaption>Kecemasan finansial umumnya memuncak pada dini hari, saat tidak ada aktivitas yang mengalihkan perhatian. (Foto: Rahmah Media/Ilustrasi)</figcaption>
+  </figure>
+
+  <p>Badan di kasur. Pikiran di mana-mana.</p>
+
+  <p>Yang paling aneh&hellip; ibadahku gak bolong. Sholat lima waktu jalan. Doa habis sholat panjang. Tapi rasanya&hellip; kosong. Mulutku komat-kamit minta rezeki, tapi hatiku sibuk ngitung utang. Habis salam, sesek itu langsung balik lagi. Kayak gak pernah sholat.</p>
+
+  <p>Aku mulai nanya dalam hati, pelan-pelan, takut-takut:</p>
+
+  <p><strong>&ldquo;Ya Allah&hellip; aku kurang apa lagi?&rdquo;</strong></p>
+
+  <p>Dan malam waktu aku pura-pura tidur itu? Itu titik terendahnya.</p>
+
+  <p>Bukan karena gak punya uangnya. Tapi karena malam itu aku sadar apa aja yang udah dirampas dari hidupku:</p>
+
+  <p>Ketenanganku. Tidurku. Temen-temenku. Kedekatanku sama anakku. Wibawaku di depan istriku. Bahkan rasa dekatku sama Allah.</p>
+
+  <p>Aku masih kerja keras. Masih ibadah. Tapi aku udah gak kenal orang yang tiap pagi natap balik di cermin.</p>
+
+  <p>Dan yang bikin frustasi&hellip; aku bukan orang yang nyerah. Aku udah nyoba benerin ini. Aku nyoba SEMUA cara yang katanya bisa ngubah nasib.</p>
+
+  <p>Itu yang mau aku ceritain sekarang. Karena kemungkinan besar&hellip; kamu juga udah nyoba cara-cara yang sama.</p>
+
+  <!-- ============ SECTION 3 ============ -->
+  <h2>Aku Udah Nyoba Semuanya. Bener-bener&hellip; SEMUANYA.</h2>
+
+  <p>Sebelum aku ceritain apa yang akhirnya berhasil, kamu perlu tau dulu apa aja yang gagal. Karena aku yakin kamu pernah lewat jalan yang sama.</p>
+
+  <p><strong>Kerja lebih keras?</strong> Udah. Aku ambil kerjaan sampingan, tidur 4 jam sehari selama hampir setahun. Hasilnya? Penghasilan naik dikit, pengeluaran ikut naik, badan hancur, dan aku makin gampang marah di rumah. Uangnya tetap cuma numpang lewat.</p>
+
+  <figure>
+    <img src="img/04-seminar-hotel.webp" alt="Peserta seminar di ballroom hotel dilihat dari belakang" width="1200" height="800" loading="lazy">
+    <figcaption>Seminar dan pelatihan kerap memberi dorongan sesaat tanpa perubahan perilaku jangka panjang. (Foto: Rahmah Media/Ilustrasi)</figcaption>
+  </figure>
+
+  <p><strong>Seminar motivasi?</strong> Aku pernah bayar 2,5 juta buat seminar &ldquo;financial freedom&rdquo; di hotel. Duduk paling depan, catat semuanya, pulang berapi-api&hellip; Tiga minggu kemudian? Balik lagi jadi orang yang sama. Ternyata semangat itu kayak parfum. Wanginya cuma bertahan beberapa hari.</p>
+
+  <p><strong>Kursus bisnis online?</strong> Total hampir 4 juta buat 3 kursus berbeda. Ilmunya bagus, gak bohong. Tapi tiap mau praktek, dada ini duluan yang sesek. Takut rugi, takut gagal, takut buang uang lagi. Ilmunya numpuk, prakteknya nol.</p>
+
+  <p><strong>Ganti usaha?</strong> Dua kali. Dua-duanya mati di bulan ketiga. Modal 8 juta lebih, lenyap.</p>
+
+  <p>Bahkan&hellip; dan ini yang paling bikin aku malu&hellip; aku pernah nyoba &ldquo;matematika sedekah&rdquo;. Sedekah 100 ribu sambil ngarep balik 1 juta. Kayak lagi transaksi jual-beli sama Allah. Sedekahnya jalan, hatinya ngitung terus. Gak ada yang berubah, kecuali aku yang makin kecewa.</p>
+
+  <p>Dzikir juga jalan. Habis sholat, komat-kamit ratusan kali. Tapi kayak yang aku bilang tadi&hellip; mulut bunyi, hati absen.</p>
+
+  <p>Kalau ditotal, lebih dari 15 juta lenyap buat &ldquo;cara ngubah nasib&rdquo;. Dan satu-satunya yang berubah cuma saldo tabunganku. Makin tipis.</p>
+
+  <p>Sampai akhirnya aku diajak temen ke sebuah majelis&hellip; dan di sana aku sadar kenapa SEMUA cara di atas gagal.</p>
+
+  <p>Bukan karena caranya salah.</p>
+
+  <p><strong>Tapi karena selama ini aku benerin sesuatu yang gak rusak&hellip; dan gak pernah nyentuh satu hal yang beneran bocor.</strong></p>
+
+  <div class="baca">
+    <div class="side-h">BACA JUGA</div>
+    <a href="#">Kenapa Orang yang Sholatnya Rajin Kadang Justru Paling Sering Ngerasa Rezekinya Seret?</a>
+    <a href="#">Sedekah Sambil Ngarep Balik Berkali Lipat: Kenapa Ini Justru Bikin Hati Makin Sempit?</a>
+  </div>
+
+  <!-- ============ SECTION 4 ============ -->
+  <h2>Satu Kalimat di Majelis Itu yang Bikin Aku Kayak Ditampar</h2>
+
+  <p>Temenku ngajak aku ke majelis Manaqib, pembacaan riwayat Syekh Abdul Qadir Jailani. Jujur, aku berangkat bukan karena semangat. Aku berangkat karena udah gak tau lagi harus ke mana.</p>
+
+  <figure>
+    <img src="img/05-majelis-kyai.webp" alt="Dua orang duduk bersila berbincang di dalam majelis pada malam hari" width="1200" height="800" loading="lazy">
+    <figcaption>Majelis pengajian menjadi ruang belajar yang masih hidup di banyak daerah di Indonesia. (Foto: Rahmah Media/Ilustrasi)</figcaption>
+  </figure>
+
+  <p>Selesai acara, temenku ngenalin aku ke seorang Kyai. Orangnya sederhana banget. Sarungan, sandal jepit. Padahal kata temenku, beliau punya beberapa usaha yang jalan semua&hellip; tanpa keliatan ngoyo.</p>
+
+  <p>Kami ngobrol. Awalnya basa-basi, sampai akhirnya aku gak kuat dan cerita semuanya. Kerja mati-matian, ibadah jalan, tapi hidup mentok dan dada sesek tiap hari.</p>
+
+  <p>Beliau dengerin sampai selesai. Gak motong sama sekali.</p>
+
+  <p>Terus beliau diem agak lama&hellip; dan bilang pelan:</p>
+
+  <blockquote>
+    <p>&ldquo;Nak, rezekimu itu gak seret. Wadahmu yang bocor.&rdquo;</p>
+  </blockquote>
+
+  <p>Aku bengong.</p>
+
+  <p>Beliau ngelanjutin: &ldquo;Rezeki itu kayak air yang dijamin terus ngalir dari atas. Yang jadi masalah bukan airnya. Wadah penampungnya&hellip; hatimu. Kalau hatimu penuh kepanikan, ketakutan, dan ngerasa semua beban dunia ada di pundakmu sendiri&hellip; itu sama kayak wadah yang retak. Dituang sebanyak apapun, ya bocor terus.&rdquo;</p>
+
+  <figure class="narrow">
+    <img src="img/06-wadah-retak.webp" alt="Kendi tanah liat yang retak, air merembes keluar saat dituang" width="800" height="1200" loading="lazy">
+    <figcaption>Analogi wadah yang retak digunakan untuk menjelaskan kondisi hati yang dimaksud dalam ilmu tasawuf. (Foto: Rahmah Media/Ilustrasi)</figcaption>
+  </figure>
+
+  <p>&ldquo;Kamu kerja keras, tapi bahan bakarnya rasa takut. Kamu sholat, tapi hatimu lagi ngitung utang. Kamu sedekah, tapi sambil nagih balasan. Badanmu ibadah, hatimu gak pernah ikut.&rdquo;</p>
+
+  <p>&ldquo;Dalam ilmu tasawuf, kondisi ini ada namanya: <strong>Ghaflah</strong>. Hati yang lalai karena dikuasai kepanikan dunia. Dan selama kamu ada di situ, mau ganti usaha seribu kali pun&hellip; hasilnya bakal sama.&rdquo;</p>
+
+  <p>Deg.</p>
+
+  <p>Dalam satu menit, semua kegagalanku 3 tahun terakhir tiba-tiba masuk akal:</p>
+
+  <p>Kerja lebih keras gagal&hellip; karena yang capek badannya, yang rusak wadahnya. Seminar motivasi gagal&hellip; karena semangat gak nambal wadah yang retak. Kursus 4 juta gagal&hellip; karena ilmu sebanyak apapun gak bisa dieksekusi sama hati yang panik. Sedekahku hambar&hellip; karena wadahnya kotor sama itung-itungan.</p>
+
+  <p>Selama ini aku gak pernah gagal karena kurang usaha.</p>
+
+  <p><strong>Aku gagal karena gak ada satu pun orang yang pernah ngasih tau aku soal ini.</strong></p>
+
+  <p>Aku langsung nanya, hampir gak sabar: &ldquo;Terus&hellip; cara nambal wadahnya gimana, Kyai?&rdquo;</p>
+
+  <p>Beliau senyum. &ldquo;Nah. Itu pertanyaan yang tepat.&rdquo;</p>
+
+  <!-- ============ SECTION 5 ============ -->
+  <h2>&ldquo;Nambal Wadah Itu Ada Urutannya&rdquo;</h2>
+
+  <p>Beliau ngambil secarik kertas, terus gambar empat kotak berjejer.</p>
+
+  <p>&ldquo;Hati manusia itu bergerak di empat fase, Nak. Ini ilmu tasawuf yang udah diajarkan Syekh Abdul Qadir Jailani ratusan tahun lalu. Bukan ilmu baru.&rdquo;</p>
+
+  <figure>
+    <img src="img/07-diagram-4-fase.webp" alt="Diagram tulisan tangan empat fase: Ghaflah, Khusyuk, Tafakkur, Tawakal Mutlak" width="1200" height="900" loading="lazy">
+    <figcaption>Empat fase kondisi hati sebagaimana dijelaskan dalam pembahasan tasawuf klasik. (Grafis: Rahmah Media)</figcaption>
+  </figure>
+
+  <p><strong>Fase pertama: Ghaflah.</strong> &ldquo;Ini posisimu sekarang. Hati yang dikuasai panik. Di fase ini, sekeras apapun ikhtiarmu, hasilnya bocor. Keputusanmu grasak-grusuk, jualanmu keliatan maksa, orang-orang malah menjauh.&rdquo;</p>
+
+  <p><strong>Fase kedua: Khusyuk.</strong> &ldquo;Hati yang hadir penuh dan tenang. Bukan cuma pas sholat&hellip; tapi pas kerja, pas nawarin dagangan, pas ngambil keputusan. Di fase ini pikiranmu jernih, dan anehnya&hellip; peluang mulai keliatan di tempat yang dulu gak pernah kamu liat.&rdquo;</p>
+
+  <p><strong>Fase ketiga: Tafakkur.</strong> &ldquo;Perenungan yang sadar. Bedanya sama overthinking: overthinking muter di rasa takut, Tafakkur melahirkan petunjuk. Di fase inilah ilham dan ide jalan keluar itu turun.&rdquo;</p>
+
+  <p><strong>Fase keempat, yang paling dalam: Tawakal Mutlak.</strong> &ldquo;Pasrah total setelah ikhtiar maksimal. Biasanya dilatih di sepertiga malam. Orang yang nyampe fase ini&hellip; hidupnya sering dikirimi &lsquo;kebetulan-kebetulan&rsquo; yang gak masuk logika. Rezeki dari arah yang gak pernah dia itung. <em>Min haitsu la yahtasib.</em>&rdquo;</p>
+
+  <p>Terus beliau natap aku:</p>
+
+  <p>&ldquo;Tapi inget, Nak. <strong>Ini gak bisa dilompat-lompat.</strong> Banyak orang langsung nyoba tawakal padahal hatinya masih di fase panik. Ya gak nyambung. Dzikir doang gak cukup kalau habis itu balik panik. Kerja keras doang gak cukup kalau wadahnya masih retak. Yang bikin ini bekerja adalah <strong>urutannya</strong>: bersihin dulu paniknya, bangun ketenangannya, baru serahkan hasilnya.&rdquo;</p>
+
+  <p>&ldquo;Makanya dulu ilmu ini cuma bisa dipelajari mondok bertahun-tahun. Bukan karena ilmunya susah&hellip; tapi karena butuh dibimbing urut, pelan-pelan, jadi kebiasaan.&rdquo;</p>
+
+  <p>Aku nanya: &ldquo;Kalau gak bisa mondok gimana, Kyai? Saya kerja&hellip;&rdquo;</p>
+
+  <p>&ldquo;Mulai dari yang paling sederhana. <strong>Lima menit sebelum ikhtiar.</strong> Jangan pernah mulai kerja dari hati yang panik. Tata dulu napasmu, istighfar, luruskan niatmu&hellip; baru bergerak. Lakuin itu tiap hari selama sebulan, dan liat sendiri apa yang berubah.&rdquo;</p>
+
+  <p>Sesimpel itu? Aku hampir gak percaya.</p>
+
+  <p>Tapi aku udah buang 15 juta buat cara-cara yang ribet. Apa ruginya nyoba yang gratis dan cuma 5 menit?</p>
+
+  <p>Besok Seninnya, aku praktekin. Dan apa yang kejadian dalam 30 hari setelahnya&hellip; sampai sekarang masih susah aku percaya.</p>
+
+  <!-- ============ SECTION 6 ============ -->
+  <h2>30 Hari yang Mengubah Segalanya</h2>
+
+  <figure>
+    <img src="img/08-pagi-tenang.webp" alt="Meja kerja di pagi hari dengan cahaya masuk dari jendela, teh mengepul, dan sajadah terlipat" width="1200" height="800" loading="lazy">
+    <figcaption>Ritual singkat sebelum memulai aktivitas menjadi inti dari praktik yang dijalankan penulis. (Foto: Rahmah Media/Ilustrasi)</figcaption>
+  </figure>
+
+  <p>Senin pagi, sebelum buka laptop dan mulai ngejar target, aku duduk diem 5 menit. Napas. Istighfar. Niat. Persis kayak kata Kyai.</p>
+
+  <p>Jujur? Rasanya aneh. Kayak buang-buang waktu.</p>
+
+  <ul class="timeline">
+    <li><span class="day">Hari 1-3</span>Gak ada keajaiban. Gak ada transferan mendadak. TAPI&hellip; ada satu yang beda: aku kerja seharian tanpa dada sesek. Baru sadar, udah bertahun-tahun aku gak pernah ngerasain kerja setenang itu.</li>
+    <li><span class="day">Hari 6</span>Aku follow-up calon klien yang udah 2 minggu cuma nge-read chatku. Biasanya aku ngejar sambil panik, bahasaku maksa. Kali ini aku nulis dengan kepala dingin, nawarin bantuan, bukan ngemis closing. Dia bales dalam sejam. Deal.</li>
+    <li><span class="day">Hari 9</span>Kebangun jam 3 pagi. Biasanya langsung ngitung cicilan sampai Subuh. Malam itu, untuk pertama kalinya&hellip; aku bangkit, wudhu, dan sujud. Nangis sejadi-jadinya di sepertiga malam. Dan habis itu aku tidur lagi&hellip; pules.</li>
+    <li><span class="day">Hari 14</span>Sholatku mulai kerasa &ldquo;ada isinya&rdquo; lagi. Susah jelasinnya. Habis salam, tenangnya kebawa. Gak langsung buyar kayak dulu.</li>
+    <li><span class="day">Hari 17</span>Relasi lama tiba-tiba WA. Ada proyek, dia inget aku. Nilainya hampir 2x gaji bulananku. Kebetulan? Mungkin. Tapi kebetulan kayak gini gak pernah mampir pas hatiku masih panik.</li>
+    <li><span class="day">Hari 21</span>SPP Bilal lunas. Plus aku pulang bawa es krim. Bukan satu&hellip; satu kotak. Pas dia lari meluk aku, aku harus buang muka biar dia gak liat bapaknya mau nangis.</li>
+    <li><span class="day">Hari 24</span>Jumat malam. Aku yang ngechat duluan di grup: &ldquo;Ngopi yuk.&rdquo; Dan pas bill dateng&hellip; aku yang bayarin.</li>
+    <li><span class="day">Hari 28</span>Aku lagi di dapur, istriku tiba-tiba meluk dari belakang.</li>
+  </ul>
+
+  <blockquote>
+    <p>&ldquo;Aku gak tau kamu ikut apaan&hellip; tapi makasih ya. Rasanya kayak suamiku yang dulu udah pulang.&rdquo;</p>
+    <cite>&mdash; Istri saya, malam hari ke-28</cite>
+  </blockquote>
+
+  <p>Aku diem. Gak sanggup jawab.</p>
+
+  <p>Dia gak nyebut uang sama sekali. Padahal justru bulan itu penghasilanku mulai naik. Yang dia kangenin ternyata bukan uangnya&hellip; tapi aku.</p>
+
+  <p>Malam itu aku sadar: yang berubah duluan bukan rezekiku. <strong>Hatiku dulu yang ditambal&hellip; rezekinya nyusul.</strong></p>
+
+  <p>Sejak itu aku catat semua yang aku pelajari dari beliau, aku susun jadi sistem harian 30 hari yang urut, lengkap dengan ritual 5 menit, script niat, sampai amalan sepertiga malamnya. Sistem itu yang sekarang aku kasih nama:</p>
+
+  <p><strong>Tawakal Code.</strong></p>
+
+  <p>Dan kalau kamu ngerasain apa yang dulu aku rasain&hellip; kalau kepanikan ini udah ngerampas tidurmu, ketenanganmu, kedekatanmu sama anakmu, bahkan khusyukmu waktu sujud&hellip;</p>
+
+  <p>Kamu gak harus terus hidup kayak gitu.</p>
+
+  <div class="cta-box" id="cta1">
+    <a href="product.html" class="cta">Ambil Semuanya Kembali, Mulai Malam Ini</a>
+    <div class="cta-sub">Akses langsung dikirim ke email &middot; Sekali bayar</div>
+  </div>
+
+  <div class="baca">
+    <div class="side-h">BACA JUGA</div>
+    <a href="#">Kata Kyai Ini, Ada 4 Kondisi Hati yang Nentuin Rezeki Seseorang. Kebanyakan Orang Berhenti di Nomor 1</a>
+    <a href="#">Bukan Kurang Ikhtiar. Ini Alasan Sebenarnya Kenapa Penghasilanmu Selalu Habis Sebelum Tanggal Tua</a>
+  </div>
+
+  <!-- ============ SECTION 7 ============ -->
+  <h2>Ternyata Bukan Cuma Aku</h2>
+
+  <p>Sejak aku mulai bagiin sistem ini, hampir tiap minggu masuk cerita-cerita yang bikin aku merinding:</p>
+
+  <div class="chat">
+    <div class="chat-top">
+      <div class="av">H</div>
+      <div>
+        <div class="nm">Pak Haris &middot; Bekasi</div>
+        <div class="st">online</div>
+      </div>
+    </div>
+    <div class="chat-body">
+      <div class="bub in">Mas rifqi saya mau cerita<span class="t">19.42</span></div>
+      <div class="bub in">saya kira closing itu soal teknik. ternyata prospek bisa nyium kepanikan kita ya<span class="t">19.42</span></div>
+      <div class="bub in">stlh rutin ritual 5 menit sblm prospekan, cara ngomong saya berubah sendiri. bulan kemarin closing terbanyak saya slama 6 taun kerja<span class="t">19.44</span></div>
+      <div class="bub in">istri saya sampe nanya saya ikut pelatihan apa 😅<span class="t">19.44</span></div>
+      <div class="bub out">MasyaAllah pak Haris. Alhamdulillah 🙏<span class="t">20.10<b>✓✓</b></span></div>
+    </div>
+  </div>
+
+  <div class="testi">
+    <div class="who">Mas Dimas, 29, freelance desainer, Jogja</div>
+    <p>&ldquo;Yang paling kerasa justru tidurnya. Dulu tiap malem kepikiran &lsquo;bulan depan dapet project gak ya&rsquo;. Sekarang udah gak kebangun jam 3 pagi sambil cemas. Eh anehnya, pas berhenti panik, malah dua klien lama balik sendiri.&rdquo;</p>
+  </div>
+
+  <div class="chat">
+    <div class="chat-top">
+      <div class="av">R</div>
+      <div>
+        <div class="nm">Bu Rina &middot; Surabaya</div>
+        <div class="st">terakhir dilihat hari ini</div>
+      </div>
+    </div>
+    <div class="chat-body">
+      <div class="bub in">awalnya suami saya yg beli, tp malah saya yg praktekin duluan wkwk<span class="t">08.15</span></div>
+      <div class="bub in">saya kira ini buku bisnis, ternyata ini benerin hati<span class="t">08.16</span></div>
+      <div class="bub in">skrg kalo orderan sepi saya gak langsung uring2an ke anak2. dan justru sejak itu jualan saya stabil alhamdulillah<span class="t">08.17</span></div>
+      <div class="bub out">Terima kasih sudah cerita bu 🙏<span class="t">09.02<b>✓✓</b></span></div>
+    </div>
+  </div>
+
+  <div class="testi">
+    <div class="who">Pak Yusuf, 51, PNS, Makassar</div>
+    <p>&ldquo;Terus terang awalnya saya curiga ini ajaran aneh-aneh. Ternyata isinya istighfar, dzikir, sholat hajat&hellip; amalan yang saya udah tau, tapi baru kali ini diurutkan jadi sistem harian yang jelas. Gak ada satupun yang keluar dari syariat. Anak saya yang kuliah di pesantren pun bilang ini tasawuf yang lurus.&rdquo;</p>
+  </div>
+
+  <div class="testi">
+    <div class="who">Mas Andri, 33, karyawan pabrik, Karawang</div>
+    <p>&ldquo;Gaji saya UMR, jadi saya bukan pengusaha atau orang hebat. Tapi yang berubah: saya gak lagi ngerasa miskin tiap tanggal tua. Dari situ saya malah berani ambil kerjaan sampingan yang dulu saya takutin. Alhamdulillah sekarang jalan.&rdquo;</p>
+  </div>
+
+  <div class="cta-box">
+    <a href="product.html" class="cta">Mulai Nambal Wadahmu Malam Ini</a>
+    <div class="cta-sub">Akses langsung dikirim ke email &middot; Sekali bayar</div>
+  </div>
+
+  <h2>Kamu Mungkin Lagi Mikir&hellip;</h2>
+
+  <h3>&ldquo;Ini pesugihan atau ilmu aneh-aneh bukan?&rdquo;</h3>
+  <p>Bukan. Dan aku ngerti kenapa kamu nanya gitu, dulu aku juga waspada. Di dalamnya gak ada mantra, gak ada ritual aneh, gak ada &ldquo;transfer energi&rdquo;. Isinya istighfar, dzikir, menata niat, jurnal, dan sholat hajat. Semuanya amalan syar&rsquo;i yang kamu udah kenal. Yang baru adalah urutan dan sistem pembiasaannya selama 30 hari.</p>
+
+  <h3>&ldquo;Aku udah rajin sholat dan dzikir, kok hidupku gitu-gitu aja?&rdquo;</h3>
+  <p>Pertanyaan ini persis pertanyaanku ke Kyai dulu. Jawabannya nusuk:</p>
+  <blockquote>
+    <p>&ldquo;Yang bunyi mulutmu, Nak. Hatimu absen.&rdquo;</p>
+  </blockquote>
+  <p>Masalahnya bukan amalannya kurang, tapi kondisi hati waktu mengamalkan. Sholat sambil ngitung utang itu badannya ibadah, hatinya Ghaflah. Tawakal Code gak nambahin ibadah baru&hellip; dia benerin &ldquo;hati&rdquo; yang menjalankan ibadahmu.</p>
+
+  <h3>&ldquo;Tawakal bukannya bikin orang jadi pasrah dan males?&rdquo;</h3>
+  <p>Justru kebalikannya. Di dalamnya ada bab khusus soal ini: tawakal itu kayak petani. Nanam, nyiram, mupuk itu wajib maksimal. Yang diserahkan cuma satu: hasil panennya. Kamu bakal tetep kerja keras&hellip; bedanya, tanpa dada sesek.</p>
+
+  <h3>&ldquo;Aku sibuk. Sempet gak?&rdquo;</h3>
+  <p>Latihan intinya 10-15 menit sehari. Versi sibuknya 5 menit. Versi daruratnya 60 detik. Kalau 5 menit aja gak ada, justru itu tanda paling jelas kamu butuh ini.</p>
+
+  <h3>&ldquo;Kok cuma segini harganya? Beneran works?&rdquo;</h3>
+  <p>Aku ngerti curiganya. Tapi gini: gak ada biaya mondok, gak ada sewa ballroom seminar, gak ada ongkos mentor privat. Bentuknya ebook digital, jadi biayanya cuma sekali nyusun, dan aku emang sengaja bikin semurah ini&hellip; karena orang yang paling butuh ilmu ini biasanya justru lagi gak pegang uang banyak.</p>
+
+  <!-- ============ SECTION 8 ============ -->
+  <h2>Ini yang Bakal Aku Bilang Kalau Kamu Adikku Sendiri</h2>
+
+  <p>Kalau kamu nanya gimana cara dapetin hasil maksimal dari Tawakal Code, jawabanku satu: <strong>jalanin urut, jangan diloncat.</strong></p>
+
+  <p>Minggu pertama kamu bakal fokus ngenalin pola panikmu sendiri. Jujur aja, di fase ini rasanya kayak &ldquo;kok aku makin sadar aku sering panik ya?&rdquo; Itu bukan mundur&hellip; itu radarmu yang mulai nyala.</p>
+
+  <p>Ketenangannya biasanya mulai kerasa di minggu kedua. Tapi perubahan yang bikin orang rumahmu nyadar &ldquo;kamu kok beda&rdquo;&hellip; itu biasanya baru muncul di minggu ketiga dan keempat, pas semua latihannya udah mulai jadi kebiasaan otomatis.</p>
+
+  <p>Makanya sistem ini didesain 30 hari. Bukan 3 hari. Hati yang udah bertahun-tahun dilatih panik, gak bisa ditambal semalam.</p>
+
+  <h3>Sekarang Soal Biayanya</h3>
+
+  <p>Coba kita itung jalur-jalur lain buat dapetin ilmu kayak gini:</p>
+
+  <div class="price-list">
+    <div class="pr"><span>Seminar motivasi di hotel</span><span class="v">Rp2.500.000</span></div>
+    <div class="pr"><span>Kursus bisnis online (3 kursus)</span><span class="v">Rp4.000.000</span></div>
+    <div class="pr"><span>Ganti usaha, dua kali gagal</span><span class="v">Rp8.000.000</span></div>
+    <div class="pr total"><span>Total yang aku buang, tanpa hasil</span><span class="v">Rp15.000.000+</span></div>
+    <div class="pr win"><span>Tawakal Code &mdash; sistem 30 hari</span><span class="v">Rp127.000</span></div>
+  </div>
+
+  <p>Mentoring privat ke guru tasawuf? Kalau kamu bisa nemuin beliaunya&hellip; itu pun biasanya harus rutin hadir majelis bertahun-tahun, atau mondok berbulan-bulan. Hitung sendiri biaya dan waktu yang harus kamu korbankan kalau kamu punya keluarga yang harus dinafkahi.</p>
+
+  <p>Sementara semua intisari yang aku pelajari dari Kyai itu, plus sistem 30 hari lengkap dengan Ritual 5 Menit, Script Niat, Jurnal Tafakkur, sampai amalan sepertiga malamnya&hellip; udah aku rangkum jadi satu panduan yang bisa kamu baca malam ini juga.</p>
+
+  <figure class="narrow">
+    <img src="img/11-mockup-produk.webp" alt="Panduan digital Tawakal Code ditampilkan pada layar tablet" width="960" height="1200" loading="lazy">
+  </figure>
+
+  <p>Sekali bayar. Bukan langganan. Langsung masuk email kamu kurang dari 1 menit setelah pembayaran.</p>
+
+  <p>Segelas kopi cafe sama cemilan aja sekarang 60-70 ribu&hellip; dan habis dalam sejam. Ini setara dua kali nongkrong, buat sistem yang bakal kamu pakai seumur hidup.</p>
+
+  <div class="cta-box">
+    <a href="product.html" class="cta">Ambil Tawakal Code &mdash; Rp127.000</a>
+    <div class="cta-sub">Akses langsung dikirim ke email &middot; Sekali bayar</div>
+  </div>
+
+  <p>Satu hal yang perlu kamu tau: harga ini harga launching. Kalau halaman ini masih nampilin Rp127.000, artinya kamu masih kebagian harga lamanya.</p>
+
+  <!-- ============ SECTION 9 ============ -->
+  <h2>Kamu Lagi Ada di Persimpangan</h2>
+
+  <figure>
+    <img src="img/12-dua-jalan.webp" alt="Gang kampung bercabang, satu sisi gelap dan sisi lain menuju cahaya pagi" width="1200" height="800" loading="lazy">
+    <figcaption>Perubahan kebiasaan umumnya dimulai dari keputusan kecil yang diambil berulang. (Foto: Rahmah Media/Ilustrasi)</figcaption>
+  </figure>
+
+  <div class="choice">
+    <div class="lb">PILIHAN 1</div>
+    <p>Tutup halaman ini. Besok pagi kamu bangun dengan beban yang sama. Tetep kebangun jam 3 pagi buat ngitung cicilan, bukan buat sujud. Tetep jawab &ldquo;duluan aja, masih ada kerjaan&rdquo; tiap diajak nongkrong. Tetep pura-pura tidur pas istrimu mau ngomong soal uang. Setahun dari sekarang&hellip; kamu masih jadi orang yang sama, cuma lebih capek.</p>
+  </div>
+
+  <p>Karena gak ada yang berubah kalau gak ada yang diubah.</p>
+
+  <div class="choice good">
+    <div class="lb">PILIHAN 2</div>
+    <p>Klik tombol di bawah. Malam ini juga panduannya udah di email kamu. Besok pagi, sebelum mulai kerja, kamu jalanin ritual 5 menit pertamamu. Dua minggu dari sekarang, kamu mulai kerja tanpa dada sesek. Sebulan dari sekarang&hellip; bisa jadi giliran istrimu yang meluk kamu dari belakang dan bilang, <em>&ldquo;Rasanya kayak suamiku yang dulu udah pulang.&rdquo;</em></p>
+  </div>
+
+  <p>Tapi kalau kamu nunda&hellip; harga launching ini gak bakal bertahan selamanya. Dan yang lebih mahal dari itu: satu bulan lagi hidup dalam kepanikan yang sebenernya bisa kamu akhiri mulai malam ini.</p>
+
+  <p><strong>Jangan biarin itu jadi ceritamu.</strong></p>
+
+  <div class="cta-box">
+    <a href="product.html" class="cta">Tambal Wadahmu, Ambil Hidupmu Kembali &mdash; Rp127.000</a>
+    <div class="cta-sub">Akses langsung dikirim ke email &middot; Sekali bayar</div>
+  </div>
+
+</main>
+
+<!-- ============ SIDEBAR ============ -->
+<aside class="sidebar">
+  <div class="stick">
+    <div class="side-h">POPULER DI RAHMAH MEDIA</div>
+
+    <a href="#" class="pop">
+      <span class="num">1</span>
+      <span><span class="tx">Kenapa Orang yang Sholatnya Rajin Kadang Justru Paling Sering Ngerasa Rezekinya Seret?</span><span class="mt">KISAH NYATA &middot; 2 hari lalu</span></span>
+    </a>
+    <a href="#" class="pop">
+      <span class="num">2</span>
+      <span><span class="tx">Kata Kyai Ini, Ada 4 Kondisi Hati yang Nentuin Rezeki Seseorang. Kebanyakan Orang Berhenti di Nomor 1</span><span class="mt">TASAWUF &middot; 4 hari lalu</span></span>
+    </a>
+    <a href="#" class="pop">
+      <span class="num">3</span>
+      <span><span class="tx">Suami Ini Pura-Pura Tidur Tiap Istrinya Mau Ngomongin Uang Sekolah Anak. Sampai Satu Malam Dia Gak Tahan Lagi</span><span class="mt">KELUARGA &middot; 1 minggu lalu</span></span>
+    </a>
+    <a href="#" class="pop">
+      <span class="num">4</span>
+      <span><span class="tx">Sedekah Sambil Ngarep Balik Berkali Lipat: Kenapa Ini Justru Bikin Hati Makin Sempit?</span><span class="mt">REZEKI &middot; 1 minggu lalu</span></span>
+    </a>
+    <a href="#" class="pop">
+      <span class="num">5</span>
+      <span><span class="tx">Bukan Kurang Ikhtiar. Ini Alasan Sebenarnya Kenapa Penghasilanmu Selalu Habis Sebelum Tanggal Tua</span><span class="mt">KEUANGAN &middot; 2 minggu lalu</span></span>
+    </a>
+
+  </div>
+</aside>
+</div>
+
+<!-- ============ KOMENTAR ============ -->
+<section class="komentar">
+  <div class="inner">
+    <div class="kom-h">Komentar (23)</div>
+
+    <div class="kom-form">
+      <input type="text" placeholder="Tulis komentar..." aria-label="Tulis komentar">
+      <button type="button">Kirim</button>
+    </div>
+
+    <div class="kom">
+      <div class="av" style="background:#7C6A4E">S</div>
+      <div class="bd">
+        <div class="hd"><b>Slamet Riyadi</b><span>2 jam lalu</span></div>
+        <p class="tx">masyaAllah.. bagian yg anak minta es krim 5rb itu kena banget. saya pernah di posisi itu persis. sampe skrg klo inget masih sesek</p>
+        <div class="ac"><a href="#">Suka</a><a href="#">Balas</a> &middot; 12</div>
+      </div>
+    </div>
+
+    <div class="kom">
+      <div class="av" style="background:#4E6E7C">D</div>
+      <div class="bd">
+        <div class="hd"><b>Dwi Handayani</b><span>4 jam lalu</span></div>
+        <p class="tx">Barakallah 🙏</p>
+        <div class="ac"><a href="#">Suka</a><a href="#">Balas</a> &middot; 3</div>
+      </div>
+    </div>
+
+    <div class="kom">
+      <div class="av" style="background:#6B5B7C">A</div>
+      <div class="bd">
+        <div class="hd"><b>Agus Prasetyo</b><span>5 jam lalu</span></div>
+        <p class="tx">maaf ya sebelumnya, tp saya masih agak ragu sm tulisan2 model gini. ujung2nya jualan kan. bukan suudzon cuma udh sering ketipu yg beginian</p>
+        <div class="ac"><a href="#">Suka</a><a href="#">Balas</a> &middot; 7</div>
+      </div>
+    </div>
+
+    <div class="kom reply">
+      <div class="av" style="background:#5C7C5E">F</div>
+      <div class="bd">
+        <div class="hd"><b>Fajar N.</b><span>4 jam lalu</span></div>
+        <p class="tx">@Agus wajar sih mas ragu. sy jg gitu awalnya. tp sy baca aja dulu isinya, yg bagian 4 fase itu emang ada di kitab kok bukan ngarang. soal beli atau ngga ya balik ke masing2</p>
+        <div class="ac"><a href="#">Suka</a><a href="#">Balas</a> &middot; 5</div>
+      </div>
+    </div>
+
+    <div class="kom">
+      <div class="av" style="background:#7C5B4E">N</div>
+      <div class="bd">
+        <div class="hd"><b>Nurul Hidayah</b><span>8 jam lalu</span></div>
+        <p class="tx">saya ibu rumah tangga, suami yg kerja. tp yg ngerasa panik tiap tanggal tua malah saya. ternyata bukan cuma saya yg gini ya. terharu bacanya</p>
+        <div class="ac"><a href="#">Suka</a><a href="#">Balas</a> &middot; 9</div>
+      </div>
+    </div>
+
+    <div class="kom">
+      <div class="av" style="background:#4E7C6B">M</div>
+      <div class="bd">
+        <div class="hd"><b>M. Ridwan</b><span>1 hari lalu</span></div>
+        <p class="tx">izin tanya, ini bukunya fisik apa file pdf ya? soalnya sy kurang suka baca di hp</p>
+        <div class="ac"><a href="#">Suka</a><a href="#">Balas</a> &middot; 1</div>
+      </div>
+    </div>
+
+    <div class="kom reply">
+      <div class="av" style="background:#7C6A4E">S</div>
+      <div class="bd">
+        <div class="hd"><b>Slamet Riyadi</b><span>22 jam lalu</span></div>
+        <p class="tx">di atas udh dijelasin mas, bentuknya ebook digital</p>
+        <div class="ac"><a href="#">Suka</a><a href="#">Balas</a> &middot; 2</div>
+      </div>
+    </div>
+
+    <div class="kom">
+      <div class="av" style="background:#5E5E7C">B</div>
+      <div class="bd">
+        <div class="hd"><b>Bayu Setiawan</b><span>3 hari lalu</span></div>
+        <p class="tx">yg bikin nampar tuh kalimat "mulut bunyi hati absen". aduh. selama ini sholat sy kaya gitu terus jujurnya</p>
+        <div class="ac"><a href="#">Suka</a><a href="#">Balas</a> &middot; 14</div>
+      </div>
+    </div>
+
+    <button class="more-kom" type="button">Muat 17 komentar lainnya</button>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="in">
+    <div class="logo"><span class="a">Rahmah</span><span class="b">Media</span></div>
+    <div class="f-bot">
+      &copy; 2026 Rahmah Media. Seluruh hak cipta dilindungi.
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING CTA ============ -->
+<div id="float">
+  <div class="info">
+    <div class="p1">Tawakal Code &middot; Rp127.000</div>
+    <div class="p2">Sistem 30 hari, akses langsung</div>
+  </div>
+  <a href="product.html" class="go">Ambil Sekarang</a>
+  <button class="x" type="button" aria-label="Tutup">&times;</button>
+</div>
+
+<script>
+(function(){
+  var bar   = document.getElementById('progress');
+  var box   = document.getElementById('float');
+  var cta1  = document.getElementById('cta1');
+  var komen = document.querySelector('.komentar');
+  var closed = false;
+  var passed = false;
+  var inKomen = false;
+
+  function render(){
+    box.classList.toggle('on', passed && !inKomen && !closed);
+  }
+
+  box.querySelector('.x').addEventListener('click', function(){
+    closed = true; render();
+  });
+
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function(e){
+      // aktif setelah CTA pertama tergulir ke atas layar
+      if (!e[0].isIntersecting && e[0].boundingClientRect.top < 0) passed = true;
+      render();
+    }, {threshold:0}).observe(cta1);
+
+    new IntersectionObserver(function(e){
+      inKomen = e[0].isIntersecting;
+      render();
+    }, {threshold:0}).observe(komen);
+  }
+
+  var tick = false;
+  window.addEventListener('scroll', function(){
+    if (tick) return;
+    tick = true;
+    requestAnimationFrame(function(){
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = h > 0 ? (window.scrollY / h * 100) + '%' : '0%';
+      tick = false;
+    });
+  }, {passive:true});
+
+  document.querySelectorAll('a[href="#"]').forEach(function(a){
+    a.addEventListener('click', function(ev){ ev.preventDefault(); });
+  });
+})();
+</script>
+
+</body>
+</html>
