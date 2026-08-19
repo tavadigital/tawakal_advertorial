@@ -1,1 +1,0 @@
-# tawakal_advertorial
