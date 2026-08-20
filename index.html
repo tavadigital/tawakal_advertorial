@@ -70,6 +70,13 @@ figure img{border-radius:4px;width:100%}
 figure.narrow{max-width:480px;margin-left:auto;margin-right:auto}
 figcaption{font-size:14px;line-height:1.5;color:var(--muted);font-style:italic;margin-top:8px}
 
+/* ---------- PHOTO STRIP ---------- */
+.strip-row{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.strip-row img{border-radius:4px;width:100%;height:100%;object-fit:cover}
+@media (max-width:520px){
+  .strip-row{grid-template-columns:1fr;gap:10px}
+}
+
 /* ---------- PULL QUOTE ---------- */
 blockquote{margin:32px 0;padding:20px 24px;background:var(--bg-soft);border-left:4px solid var(--brand);font-family:var(--serif);font-style:italic;font-size:22px;line-height:1.5;color:var(--ink)}
 blockquote p{margin:0}
@@ -316,12 +323,15 @@ footer .logo .b{color:#fff}
 
   <p>Hampir tiap malam aku kebangun jam 2 atau jam 3 pagi. Bukan buat tahajud. Tapi karena otakku otomatis nyala, ngitung-ngitung: cicilan tanggal 5, SPP tanggal 10, listrik, kontrakan&hellip; Angka-angka itu muter kayak kaset rusak sampai adzan Subuh.</p>
 
-  <figure>
-    <img src="img/02-jam3-pagi.webp" alt="Layar ponsel menyala dalam gelap saat dini hari" width="1200" height="800" loading="lazy">
-    <figcaption>Kecemasan finansial umumnya memuncak pada dini hari, saat tidak ada aktivitas yang mengalihkan perhatian. (Foto: Rahmah Media/Ilustrasi)</figcaption>
-  </figure>
-
   <p>Badan di kasur. Pikiran di mana-mana.</p>
+
+  <figure class="strip">
+    <div class="strip-row">
+      <img src="img/13-teman-nongkrong.webp" alt="Tiga orang mengobrol di dalam kedai kopi, dilihat dari trotoar di luar" width="1200" height="800" loading="lazy">
+      <img src="img/02-jam3-pagi.webp" alt="Layar ponsel menyala dalam gelap saat dini hari" width="1200" height="800" loading="lazy">
+    </div>
+    <figcaption>Selain menekan kondisi keuangan, beban finansial jangka panjang kerap berdampak pada relasi sosial dan kualitas tidur. (Foto: Rahmah Media/Ilustrasi)</figcaption>
+  </figure>
 
   <p>Yang paling aneh&hellip; ibadahku gak bolong. Sholat lima waktu jalan. Doa habis sholat panjang. Tapi rasanya&hellip; kosong. Mulutku komat-kamit minta rezeki, tapi hatiku sibuk ngitung utang. Habis salam, sesek itu langsung balik lagi. Kayak gak pernah sholat.</p>
 
